@@ -1,101 +1,174 @@
-*{
-    box-sizing: border-box;
-}
-.header{
-    background-image:url('images/web-banner.jpg');
-    margin:0px;
-    height: 450px;
-    background-size: cover;
-    color: #333;
-    font-size: 18px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-.header-chile {
-  margin: 0px;
-  height: 50px;
-  color: #f1f1f1;
-  list-style-type: none;
-  text-align: center;
-  overflow: hidden;
-  background-color: #333;
-}
-.header-chile p {
-  font-size: 12px;
-  padding: 10px;
-}
-.header ul {
-    list-style-type: none;
+*{ 
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: rgb(241, 245, 245);
-    position: fixed;
-    width: 100%;
-    margin-top: 0px;
-  }
- .header li {
-    float: left;
-  }
- .header li a,.header .dropbtn {
-    display: inline-block;
-    color: rgb(23, 22, 22);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  .header li.dropdown {
-    display: inline-block;
-  }
-  
-  .header .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .header .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+    box-sizing: border-box;
+}
 
-img{
-    max-width:100%;
+/* Header */
+.header{
+    width: 100%;
+    height: 450px;
+    background-image: url('images/web-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
 }
-video{
-    max-width: 100%;
+
+/* Navbar */
+.navbar{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 25px;
+
+    list-style: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgb(241,245,245);
+
+    z-index: 999;
 }
-h3{
-    text-transform: uppercase;
+
+/* Left + Right */
+.nav-left,
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+/* Remove old float */
+.navbar li{
+    list-style: none;
+}
+
+/* Links */
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 10px 12px;
+    display: block;
+}
+
+/* Hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn{
+    background: red;
+    color: white;
+}
+
+/* Logo */
+.logo{
+    width: 120px;
+}
+
+/* Icons */
+.icon{
+    width: 24px;
+    cursor: pointer;
+}
+
+/* Search Box */
+.search-box input{
+    width: 200px;
+
+    padding: 10px 10px 10px 40px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    outline: none;
+
+    background-image: url("images/icons/search-interface-symbol.png");
+
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 18px;
+}
+
+/* Dropdown */
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    min-width: 180px;
+
+    background: white;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    z-index: 1000;
+}
+
+/* Dropdown links */
+.dropdown-content a{
+    padding: 12px 15px;
+    color: black;
+}
+
+.dropdown-content a:hover{
+    background: #f1f1f1;
+    color: black;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Show More */
+.show-more ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0;
+}
+
+.show-more-item .a-show{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+.show-more-item .a-show:hover{
+    background: #f1f1f1;
+}
+
+/* Grid */
 .row::after{
-    content:"";
-    clear:both;
-    display:table;
+    content: "";
+    clear: both;
+    display: table;
 }
-.build {
-  text-align: right;
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
 }
+
 .col-1{width:8.33%;}
 .col-2{width:16.66%;}
 .col-3{width:25%;}
 .col-4{width:33.33%;}
-.col-5{width:51.66%;}
+.col-5{width:41.66%;}
 .col-6{width:50%;}
 .col-7{width:58.33%;}
 .col-8{width:66.66%;}
@@ -104,15 +177,104 @@ h3{
 .col-11{width:91.66%;}
 .col-12{width:100%;}
 
-[class*="col-"]{
-    float:left;
-    padding:15px;
+/* Image */
+img{
+    max-width: 100%;
 }
 
-@media only screen and (max-width:768px){
-    /*for mobile phoes:*/
+/* Video */
+video{
+    max-width: 100%;
+}
+
+/* Price */
+.price{
+    color: red;
+    font-size: 17px;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+/* =========================
+   Tablet
+========================= */
+@media only screen and (max-width: 992px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-left,
+    .nav-right{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-box input{
+        width: 180px;
+    }
+}
+
+/* =========================
+   Mobile
+========================= */
+@media only screen and (max-width: 768px){
+
+    .navbar{
+        padding: 15px;
+    }
+
+    .nav-left{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-right{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dropdown-content{
+        position: static;
+        width: 100%;
+
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .search-box input{
+        width: 160px;
+    }
+
     [class*="col-"]{
-        width:100%;
-        background-color: bisque;
+        width: 100%;
+    }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+@media only screen and (max-width: 480px){
+
+    .nav-right{
+        flex-direction: column;
+    }
+
+    .search-box input{
+        width: 100%;
+    }
+
+    .icon{
+        width: 22px;
     }
 }

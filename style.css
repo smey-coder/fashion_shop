@@ -7,6 +7,9 @@
     height: 450px;
     background-size: cover;
     color: #333;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .header-chile {
   margin: 0px;
@@ -20,20 +23,20 @@
 .header-chile p {
   font-size: 12px;
   padding: 10px;
-
 }
 .header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(158, 213, 222);
+    background-color: rgb(241, 245, 245);
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
   }
-  
  .header li {
     float: left;
   }
-  
  .header li a,.header .dropbtn {
     display: inline-block;
     color: rgb(23, 22, 22);

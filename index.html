@@ -9,67 +9,79 @@
 <body>
     <!-- Navbar -->
     <div class="header">
-        <ul class="navbar">
-            <!-- nav left -->
-            <div class="nav-left">
-                <li><a href="#home">HOME</a></li>
-                <!-- dropdown list -->
-                <li class="dropdown">
-                    <a href="#women" class="dropbtn">WOMEN</a>
-                    <div class="dropdown-content">
-                        <a href="all_women.html">all</a>
-                        <a href="lifestyle_women.html">LifeStyle</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#men" class="dropbtn">MEN</a>
-                    <div class="dropdown-content">
-                        <a href="all_men.html">all</a>
-                        <a href="lifestyle_men.html">LifeStyle</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#kids" class="dropbtn">KIDS</a>
-                    <div class="dropdown-content">
-                        <a href="all_kids.html">all</a>
-                        <a href="lifestyle_kids.html">LifeStyle</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#ZHOME" class="dropbtn">Z.HOME</a>
-                    <div class="dropdown-content">
-                        <a href="all_zhome.html">all</a>
-                        <a href="lifestyle_zhome.html">LifeStyle</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#lifestyle" class="dropbtn">LIFESTYLE</a>
-                    <div class="dropdown-content">
-                        <a href="all_lifestyle.html">all</a>
-                        <a href="lifestyle_zhome.html">LifeStyle</a>
-                    </div>
-                </li>
-            </div>
-            <!-- nav center -->
-            <div class="nav-center">
-                <li><img src="images/ZANDO-NEW-LOGO-2025.png" alt="Logo" class="logo"></li>
-            </div>
-            <!-- nav right -->
-            <div class="nav-right">
-                <div class="search-box">
-                    <input type="text" placeholder="Search..." required>
-                </div>
-                <img src="images/icons/notification.png" alt="Location" class="icon">
-                <img src="images/icons/heart.png" alt="heart" class="icon">
-                <img src="images/icons/shopping-bag.png" alt="cart" class="icon">
-                <li><a href="#login">Register</a></li>
-                <li><a href="#login">Login</a></li>
-            </div>
-        </ul>
-        <!-- <div class="header-chile">
-            <p>Shop US$40 Get Free Delivery!</p>
-        </div> -->
+    <!-- Menu Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
     </div>
+
+    <ul class="navbar" id="navbar">
+        <!-- nav left -->
+        <div class="nav-left">
+            <li><a href="#home">HOME</a></li>
+
+            <li class="dropdown">
+                <a href="#women" class="dropbtn">WOMEN</a>
+                <div class="dropdown-content">
+                    <a href="all_women.html">all</a>
+                    <a href="lifestyle_women.html">LifeStyle</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#men" class="dropbtn">MEN</a>
+                <div class="dropdown-content">
+                    <a href="all_men.html">all</a>
+                    <a href="lifestyle_men.html">LifeStyle</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#kids" class="dropbtn">KIDS</a>
+                <div class="dropdown-content">
+                    <a href="all_kids.html">all</a>
+                    <a href="lifestyle_kids.html">LifeStyle</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#ZHOME" class="dropbtn">Z.HOME</a>
+                <div class="dropdown-content">
+                    <a href="all_zhome.html">all</a>
+                    <a href="lifestyle_zhome.html">LifeStyle</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#lifestyle" class="dropbtn">LIFESTYLE</a>
+                <div class="dropdown-content">
+                    <a href="all_lifestyle.html">all</a>
+                    <a href="lifestyle_zhome.html">LifeStyle</a>
+                </div>
+            </li>
+        </div>
+
+        <!-- nav center -->
+        <div class="nav-center">
+            <li>
+                <img src="images/ZANDO-NEW-LOGO-2025.png" alt="Logo" class="logo">
+            </li>
+        </div>
+
+        <!-- nav right -->
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" placeholder="Search..." required>
+            </div>
+
+            <img src="images/icons/notification.png" alt="" class="icon">
+            <img src="images/icons/heart.png" alt="" class="icon">
+            <img src="images/icons/shopping-bag.png" alt="" class="icon">
+
+            <li><a href="#register">Register</a></li>
+            <li><a href="#login">Login</a></li>
+        </div>
+    </ul>
+</div>
     <!-- Button brand icon -->
     <div class="row">
         <div class="col-2">
@@ -262,5 +274,7 @@
      <div class="col-12">
         <p class="build">@2015 - 2026 Zando. All rights reserved.</p>
      </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

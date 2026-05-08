@@ -248,6 +248,11 @@ video{
 
 .original-price{
     text-decoration: line-through;
+    color: black;
+    font-size: 17px;
+}
+.qrcode {
+    width: 100px;
 }
 
 /* =========================
